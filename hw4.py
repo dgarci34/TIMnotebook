@@ -56,7 +56,7 @@ def getSSE(ar):
     mean = np.sum(ar) / ar.size
     # create another array of equal size to keep squared errors
     diff = np.zeros(ar.size)
-    for i in ar.size:
+    for i in range(ar.size):
         diff[i] = (mean - ar[i]) * (mean - ar[i])
     #return the sum of squared errors
     return np.sum(diff)
