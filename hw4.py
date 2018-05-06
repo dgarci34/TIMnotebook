@@ -28,6 +28,7 @@ sse4 = np.zeros(0)
 sse5 = np.zeros(0)
 sse6 = np.zeros(0)
 sse7 = np.zeros(0)
+
     
     #helper function for adding in the sse to the appropiate array
 def insertSSE(x,er):
@@ -71,6 +72,7 @@ def run(k):
     print(C)
 
     # Plotting along with the Centroids
+
     plt.scatter(f1, f2, c='#050505', s=7)
     plt.scatter(C_x, C_y, marker='*', s=200, c='g')
 
@@ -80,9 +82,7 @@ def run(k):
     clusters = np.zeros(len(X))
     # Error func. - Distance between new centroids and old centroids
     error = dist(C, C_old, None)
-
-
-    #run algorithm loop
+    #algorithm loop
     while error != 0:
         # Assigning each value to its closest cluster
         for i in range(len(X)):
@@ -98,7 +98,8 @@ def run(k):
         error = dist(C, C_old, None)
         #append to error array for later calculation
         insertSSE(k,error)
-    
+
+    #ploting for each centroid
     colors = ['r', 'g', 'b', 'y', 'c', 'm', 'w']
     fig, ax = plt.subplots()
     for i in range(k):
@@ -106,5 +107,26 @@ def run(k):
             ax.scatter(points[:, 0], points[:, 1], s=7, c=colors[i])
     ax.scatter(C[:, 0], C[:, 1], marker='*', s=200, c='#050505')
     
+#run all 2-7 centers
+run(2)
+run(3)
+run(4)
+run(5)
+run(6)
 run(7)
-print(getSSE(sse7))
+
+#all sse's together
+SSEs = np.zeros(0)
+
+#show the sse for each iteration
+SSEs = np.append(SSEs,getSSE(sse2))
+SSEs = np.append(SSEs,getSSE(sse3))
+SSEs = np.append(SSEs,getSSE(sse4))
+SSEs = np.append(SSEs,getSSE(sse5))
+SSEs = np.append(SSEs,getSSE(sse6))
+SSEs = np.append(SSEs,getSSE(sse7))
+print(SSEs)
+
+#show SSE based on k on graph
+plt.plot([2,3,4,5,6,7],SSEs)
+plt.show()
