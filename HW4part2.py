@@ -172,4 +172,36 @@ def main():
     #output the accuracy found
     print('Accuracy: {0}%').format(accuracy)
 
+print('part 1')
 main()
+
+#helper for varying split
+def run(splitRatio):
+    #load filename
+    filename = 'pima-indians-diabetes.data.csv'
+    #include dataset
+    dataset = loadCsv(filename)
+    #define training set and testing set
+    trainingSet, testSet = splitDataset(dataset, splitRatio)
+    #show statistics on input
+    print('Split {0} rows into train={1} and test={2} rows').format(len(dataset), len(trainingSet), len(testSet))
+    # prepare model
+    summaries = summarizeByClass(trainingSet)
+    # test model
+    predictions = getPredictions(summaries, testSet)
+    #obtain accuracy of predictions
+    accuracy = getAccuracy(testSet, predictions)
+    #output the accuracy found
+    print('Accuracy: {0}%').format(accuracy)
+
+#the following run for part 2 of the hw problem
+print('part 2')
+print('50 50 split ratio')
+run(0.5)
+print('67 33 ratio')
+run(0.67)
+print('75 25 split ratio')
+run(0.75)
+print('80 20 split ratio')
+run(0.8)
+    
