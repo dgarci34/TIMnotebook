@@ -10,7 +10,7 @@
 .textblock{
     display: flex;
     flex-direction: column;
-    margin: 5px;
+    margin: auto;
     justify-content: space-around;
     align-items: center;
     font-family: Lato;
@@ -29,15 +29,14 @@
 .major{
     display: flex;
     flex-direction: column;
-    margin: 5px;
-    width: 231px;
-    height: 42px;
+    width: 272px;
+    height: 119px;
     font-family: Lato;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 900;
     line-height: normal;
-    font-size: 18px;
-    color: #000000;
+    font-size: 14px;
+    color: #909090;;
 }
 .name{
     position: absolute;
