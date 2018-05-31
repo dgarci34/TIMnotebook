@@ -39,7 +39,8 @@
     color: #909090;;
 }
 .name{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 231px;
     height: 42px;
     font-family: Lato;
@@ -50,7 +51,8 @@
     color: #000000;
 }
 .yellow-tag{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 31.81px;
     height: 27.57px;
     font-family: Lato;
