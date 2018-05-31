@@ -1,6 +1,73 @@
+@import url(//fonts.googleapis.com/css?family=Lato);
+
 .rectangle{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 469px;
     height: 400px;
     background: #FFFFFF;
+}
+.textblock{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+    color: #000000;
+}
+.image{
+    position: absolute;
+    width: 221.4px;
+    height: 147.21px;
+/*background: url(Image.png)*/
+}
+.major{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 231px;
+    height: 42px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    color: #000000;
+}
+.name{
+    position: absolute;
+    width: 231px;
+    height: 42px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    color: #000000;
+}
+.yellow-tag{
+    position: absolute;
+    width: 31.81px;
+    height: 27.57px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 9px;
+    color: #FEDB55;
+}
+.bio{
+    width: 269px;
+    height: 119px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    color: #000000;
 }
