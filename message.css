@@ -7,6 +7,12 @@
     height: 400px;
     background: #FFFFFF;
 }
+.low{
+    display: flex;
+    flex-direction: row;
+    width: 469px;
+    height: 
+}
 .textblock{
     display: flex;
     flex-direction: column;
@@ -21,13 +27,14 @@
     color: #000000;
 }
 .image{
-    position: absolute;
-    width: 221.4px;
-    height: 147.21px;
-/*background: url(Image.png)*/
+    width: 221px;
+    height: 148px;
+    background: url(image.png) no-repeat;
+    background-size: 100%;
 }
 .major{
     display: flex;
+    margin: 5px;
     flex-direction: column;
     width: 272px;
     height: 119px;
