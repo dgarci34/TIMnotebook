@@ -1,81 +1,62 @@
 @import url(//fonts.googleapis.com/css?family=Lato);
-
-.rectangle{
-    display: flex;
-    flex-direction: column;
-    width: 469px;
-    height: 400px;
-    background: #FFFFFF;
+*{
+	font-family: Lato;
+	font-weight: normal;
+	line-height: normal;
 }
-.low{
-    display: flex;
-    flex-direction: row;
-    width: 469px;
-    height: 
+.container{
+  width: 470px;
+  height: 400px;
+  background-color: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
 }
-.textblock{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    justify-content: space-around;
-    align-items: center;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    font-size: 18px;
-    color: #000000;
+.message{
+  width: 430px;
+	font-style: medium;
+	font-size: 18px;
+}
+.lower{
+	width: 430px;
+	height: 150px;
+  padding: 5px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
 }
 .image{
-    width: 221px;
-    height: 148px;
-    background: url(image.png) no-repeat;
-    background-size: 100%;
+    width: 120px;
+    height: 135px;
+    background-color: yellow;
 }
-.major{
-    display: flex;
-    margin: 5px;
-    flex-direction: column;
-    width: 272px;
-    height: 119px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    font-size: 14px;
-    color: #909090;;
+.bio-container{
+  width: 270px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
 }
 .name{
-    display: flex;
-    flex-direction: column;
-    width: 231px;
-    height: 42px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    font-size: 18px;
-    color: #000000;
+	font-family: Lato;
+	font-style: Bold;
+	font-size: 18px;
+  margin: 0px 0px 5px 10px;
 }
-.yellow-tag{
-    display: flex;
-    flex-direction: column;
-    width: 31.81px;
-    height: 27.57px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    font-size: 9px;
-    color: #FEDB55;
+.major{
+  color: #909090;
+  font-style: Black;
+	font-size: 14px;
+  margin: 0px 0px 5px 10px;
+}
+.bio-title{
+  color: #FEDB55;
+  font-style: Bold;
+	font-size: 9px;
+  margin: 0px 0px 5px 10px;
 }
 .bio{
-    width: 269px;
-    height: 119px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    font-size: 14px;
-    color: #000000;
+  font-style: Medium;
+	font-size: 14px;
+  margin: 0px 0px 0px 10px;
 }
