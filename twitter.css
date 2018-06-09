@@ -40,3 +40,29 @@
 .tweet{
     color: #040404;
 }
+.lower-rectangle{
+	display: flex;
+	flex-direction: column;
+	width: inherit;
+	height: 60px;
+}
+.buffer{
+	display: flex;
+	width: inherit;
+	height: 40px;
+}
+.reply-wrapper{
+	width: inherit;
+	height: auto;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+}
+.reply-box{
+	width: 14px;
+	height: 14px;
+	border-radius: 5px 5px 5px 1px;
+	background: #FFFFFF;
+	border: 1px solid #BDBDBD;
+	display: flex;
+}
